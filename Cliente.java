@@ -5,13 +5,15 @@ public class Cliente {
     private String nomeDoCliente;
     private String dataNascimento;
     private String numeroCPF;
+    private char sexo;
     
-    public Cliente(int numeroDaConta, String nomeDoCliente, String dataNascimento, double saldoDaConta, String numeroCPF){
+    public Cliente(int numeroDaConta, String nomeDoCliente, String dataNascimento, double saldoDaConta, String numeroCPF, char sexo){
         this.numeroDaConta = numeroDaConta;
         this.nomeDoCliente = nomeDoCliente;
         this.dataNascimento = dataNascimento;
         this.saldoDaConta = saldoDaConta;
         this.numeroCPF = numeroCPF;
+        this.sexo = sexo;
     }
 
     public int getNumeroDaConta() {
@@ -53,5 +55,4 @@ public class Cliente {
     public void setNumeroCPF(String numeroCPF) {
         this.numeroCPF = numeroCPF;
     }   
-
 }
